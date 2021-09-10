@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <h:outputStylesheet name="css/cssLayout.css"/>
+        <h:outputStylesheet name="css/estilos.css"/>
+        <h:outputStylesheet name="css/estilos_1.css"/>
+        <link href="https://file.myfontastic.com/zUBdX4G2C5t8XQ85Qfz4Sb/icons.css" type="text/css" rel="stylesheet"></link>
+        <ui:insert name="css"/>
+        <title>Healthy food</title>
+    </h:head>
+    <h:body>
+        <div class="fondo__registro">
+            <div id="top">
+                <ui:insert name="top">
+                    <header class="header">
+                        <nav class="header__nav containertemplate">
+                            <div>
+                                <p:graphicImage name="img/LogoPagin.png" class="nav__logo" />
+                            </div>
+                            <ul class="links">
+                                <h:link outcome="index.xhtml" class="menu__link">Inicio</h:link>
+                                <h:link outcome="Menu.xhtml" class="menu__link">Menú</h:link>
+                                <h:link outcome="Contacto.xhtml" class=" menu__link">Contactos</h:link>
+                                <h:link outcome="login.xhtml" class="menu__link">Inicio sesion</h:link>
+                                <li class="li">
+                                    <h:link class="desktop-link" rendered="#{mbLogin.verificarSession()}">Cuenta</h:link>
+                                    <ul class="ul">
+                                        <div>
+                                            <a><p:graphicImage name="img/LogoPagin.png" class="img_cuenta"/>
+                                            </a>
+                                        </div>
+                                        <h:link class="desktop-link width-link">Editar perfil</h:link>
+                                        <h:link class="desktop-link width-link">Gregory Ureta</h:link>
+                                        <h:link class="desktop-link width-link link-border">Cerrar sesión</h:link>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </ui:insert>
+            </div>
+
+            <div id="content" class="center_content">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+        </div>
+        <div id="bottom">
+            <ui:insert name="bottom"> <footer class="container-footer">
+                    <div class="container-footer-body">
+                        <div class="column1">
+                            <div class="padding">
+                                <h1 class="footer-title">Mas informacion del trabajo </h1>
+                            </div>
+                            <div class="padding">
+                                <p>Encuentra diferentes platos de comida para disgustar , lo mejor lo encuentras en Healthy Food</p>
+                            </div>
+                            <div class="padding">
+                                <p>Horario restaurante:                   
+                                    Dom-Mie 12:00 PM - 10:00 PM                   
+                                    Jue-Sab 12:00 PM - 11:00 PM    
+                                </p>                                     
+                                <p>Horario entrega a domicilio:
+                                    Dom-Mie 12:00 PM - 10:00 PM                    
+                                    Jue-Sab 12:00 PM - 11:00 PM</p> 
+                            </div>
+                        </div>
+
+                        <div class="column2">
+                            <div class="padding">
+                                <h1 class="footer-title">Redes Sociales</h1>
+                            </div>
+                            <div class="padding">
+                                <span class="icon-facebook">
+                                    <h:outputLabel for="">siguenos en Facebook</h:outputLabel>
+                                </span>
+                            </div>
+
+                            <div class="padding">
+                                <span class="icon-instagram">
+                                    <h:outputLabel for="">siguenos en Instagram</h:outputLabel>
+                                </span>
+                            </div>
+
+                            <div class="padding">
+                                <span class="icon-whatsapp">
+                                    <h:outputLabel for="">siguenos en Whatsapp</h:outputLabel>
+                                </span>
+                            </div>
+
+                            <div class="padding">
+                                <span class="icon-twitter">
+                                    <h:outputLabel for="">Siguenos en Twitter</h:outputLabel>
+                                </span>
+                            </div>
+
+                            <div class="padding">
+                                <span class="icon-youtube">
+                                    <h:outputLabel for="">Siguenos en Youtube</h:outputLabel>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="column3">
+                            <div class="padding">
+                                <h1 class="footer-title">informacion de contactos </h1>
+                            </div>
+                            <div class="padding">
+                                <span class="icon-loc">
+                                    <h:outputLabel for="">Av. Las Aguas, Guayaquil 090501</h:outputLabel>
+                                </span>
+                            </div>
+
+                            <div class="padding">
+                                <span class="icon-phone">
+                                    <h:outputLabel for="">0999999999</h:outputLabel>
+                                </span>
+                            </div>
+                            <div class="padding">
+                                <span class="icon-mensaje">
+                                    <h:outputLabel for="">UniversidadGuayaquil</h:outputLabel>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-copy">
+                        <div class="padding-footer">
+                            <p>Derechos reservados &copy;grupoGI</p> 
+                        </div>
+                    </div>
+                </footer> 
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
